@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfitPoll</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="header-logo">ProfitPoll</h1>
+
+            <div class="header-menu">
+                <a href="./index.html" class="header-menu__item">Main</a>
+                <a href="#about" class="header-menu__item">About us</a>
+                <a href="#survey" class="header-menu__item">Survey</a>
+                <a href="#survey" class="header-menu__item">Receive money</a>
+
+                <div class="header-balance-menu">
+                    <p class="header-balance__text">Your wallet:</p>
+                    <p class="header-balance__cost">20 coin</p>
+                </div>
+            </div>
+
+            <div class="header-balance">
+                <p class="header-balance__text">Your wallet:</p>
+                <p class="header-balance__cost">20 coin</p>
+            </div>
+
+            <button class="burger-btn" aria-label="Menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-container">
+                <div class="intro-left">
+                    <div class="intro-left__top">
+                        <h1 class="intro-left__title">
+                            Echo Insights Wants to Hear From You - Get Paid for Your Opinions!
+                        </h1>
+
+                        <h2 class="intro-left__subtitle">
+                            Help us shape the future and get rewarded for your valuable feedback.
+                        </h2>
+
+                        <a href="#survey" class="intro-left__button">
+                            Go to the survey
+                            <img src="./img/arrow.svg" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="intro-left__bottom">
+                        <p class="intro-left__bottom-text">They've already passed:</p>
+
+                        <div class="intro-left__bottom-subs">
+                            <div class="intro-left__bottom-subs__persons">
+                                <img src="./img/first_person.png" alt="Person" class="person">
+                                <img src="./img/second_person.png" alt="Person" class="person">
+                                <img src="./img/third_person.png" alt="Person" class="person">
+                                <img src="./img/fouth_person.png" alt="Person" class="person">
+                                <img src="./img/fifth_person.png" alt="Person" class="person">
+                            </div>
+                            <p class="intro-left__bottom-subs__number">100+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intro-right">
+                    <img class="intro__picture" src="./img/girl.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-left">
+                    <h1 class="about-left__title">
+                        Why Participate in Our Surveys?
+                    </h1>
+
+                    <h2 class="about-left__subtitle">
+                        Become a valuable influencer and shape the future of products and services you rely on every day!
+                        Your opinions directly impact the decisions of major brands and organizations. 
+                        By participating in our quick and easy surveys, you're not just earning money
+                    </h2>
+
+                    <div class="about-left__info">
+                        <p class="about-left__info-title">
+                            Quick & Easy: Surveys take just a few minutes to complete.
+                        </p>
+                        <ul class="about-left__info-list">
+                            <li class="about-left__info-list__item">
+                                Cash Rewards: Earn [Amount] for each survey you finish.
+                            </li>
+
+                            <li class="about-left__info-list__item">
+                                Impactful: Your feedback helps shape products and services.
+                            </li>
+
+                            <li class="about-left__info-list__item">
+                                Secure & Confidential: Your data is protected.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#survey" class="about-left__button">
+                        Go to the survey
+                        <img src="./img/arrow.svg" alt="arrow">
+                    </a>
+                </div>
+
+                <div class="about-right">
+                    <img src="./img/bmw.png" alt="BMW" class="about-right__picture">
+                    <img src="./img/belle.png" alt="Belle" class="about-right__picture">
+                    <img src="./img/huawei.png" alt="Huawei" class="about-right__picture">
+                    <img src="./img/tnf.png" alt="TNF" class="about-right__picture">
+                    <img src="./img/dyson.png" alt="Dyson" class="about-right__picture">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="survey">
+        <div class="footer-container">
+
+            <div class="quiz-container">
+                <!-- Demographic questions -->
+                <div class="quiz-slide active">
+                    <p class="quiz-number">1 of 12</p>
+                    <h2>Your gender</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="gender" value="Male">
+                        <span class="checkmark"></span>
+                        Male
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="gender" value="Female">
+                        <span class="checkmark"></span>
+                        Female
+                    </label>
+                    <div class="specify-container">
+                        <label id="spec" class="option">
+                        <input type="radio" name="gender" value="Other">
+                        <span class="checkmark"></span>
+                        Other (specify)
+                        </label>
+                        <textarea type="text" class="specify-input" placeholder="Type your answer..."></textarea>
+                    </div>
+                    
+                    </div>
+                        <div class="navigation">
+                        <button class="prev-btn" disabled>Previous</button>
+                        <button class="next-btn" disabled>Next question</button>
+                        <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <div class="quiz-slide">
+                    <p class="quiz-number">2 of 12</p>
+                    <h2>Your age</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="age" value="Under 18">
+                        <span class="checkmark"></span>
+                        Under 18
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="age" value="18-24">
+                        <span class="checkmark"></span>
+                        18-24
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="age" value="25-34">
+                        <span class="checkmark"></span>
+                        25-34
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="age" value="35-44">
+                        <span class="checkmark"></span>
+                        35-44
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="age" value="45-54">
+                        <span class="checkmark"></span>
+                        45-54
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="age" value="55+">
+                        <span class="checkmark"></span>
+                        55+
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <div class="quiz-slide">
+                    <p class="quiz-number">3 of 12</p>
+                    <h2>Where do you live</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="location" value="City">
+                        <span class="checkmark"></span>
+                        City
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="location" value="Suburb">
+                        <span class="checkmark"></span>
+                        Suburb
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="location" value="Village/countryside">
+                        <span class="checkmark"></span>
+                        Village/countryside
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <!-- Animal-related questions -->
+                <div class="quiz-slide">
+                    <p class="quiz-number">4 of 12</p>
+                    <h2>Do you have pets</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="pets" value="Yes (cats/dogs/other)">
+                        <span class="checkmark"></span>
+                        Yes (cats/dogs/other)
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="pets" value="No, but I want">
+                        <span class="checkmark"></span>
+                        No, but I want
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="pets" value="No and don't want">
+                        <span class="checkmark"></span>
+                        No and don't want
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <div class="quiz-slide">
+                    <p class="quiz-number">5 of 12</p>
+                    <h2>Do you support banning animal circuses</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="circus" value="Yes, it's cruel">
+                        <span class="checkmark"></span>
+                        Yes, it's cruel
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="circus" value="No, it's tradition">
+                        <span class="checkmark"></span>
+                        No, it's tradition
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="circus" value="I don't care">
+                        <span class="checkmark"></span>
+                        I don't care
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <div class="quiz-slide">
+                    <p class="quiz-number">6 of 12</p>
+                    <h2>Would you euthanize a terminally ill dog or wait for natural death</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="dog" value="Euthanize to prevent suffering">
+                        <span class="checkmark"></span>
+                        Euthanize to prevent suffering
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="dog" value="Couldn't do it, let it live">
+                        <span class="checkmark"></span>
+                        Couldn't do it, let it live
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="dog" value="Hard to answer">
+                        <span class="checkmark"></span>
+                        Hard to answer
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <!-- Personal questions -->
+                <div class="quiz-slide">
+                    <p class="quiz-number">7 of 12</p>
+                    <h2>Do you usually tell the truth or try not to hurt people's feelings</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="truth" value="Always honest, even if it hurts">
+                        <span class="checkmark"></span>
+                        Always honest, even if it hurts
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="truth" value="Sometimes soften the truth">
+                        <span class="checkmark"></span>
+                        Sometimes soften the truth
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="truth" value="Lie if it keeps peace">
+                        <span class="checkmark"></span>
+                        Lie if it keeps peace
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <div class="quiz-slide">
+                    <p class="quiz-number">8 of 12</p>
+                    <h2>Would you steal a million dollars if you knew you wouldn't get caught</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="steal" value="Yes, without doubt">
+                        <span class="checkmark"></span>
+                        Yes, without doubt
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="steal" value="No, it's wrong">
+                        <span class="checkmark"></span>
+                        No, it's wrong
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="steal" value="Maybe, depends on situation">
+                        <span class="checkmark"></span>
+                        Maybe, depends on situation
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <div class="quiz-slide">
+                    <p class="quiz-number">9 of 12</p>
+                    <h2>Do you believe in fate or that everything depends on you</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="fate" value="Everything is predetermined">
+                        <span class="checkmark"></span>
+                        Everything is predetermined
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="fate" value="I build my own life">
+                        <span class="checkmark"></span>
+                        I build my own life
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="fate" value="I don't think about it">
+                        <span class="checkmark"></span>
+                        I don't think about it
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <!-- Engagement questions -->
+                <div class="quiz-slide">
+                    <p class="quiz-number">10 of 12</p>
+                    <h2>Cats or dogs</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="animals" value="Cats">
+                        <span class="checkmark"></span>
+                        Cats
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="animals" value="Dogs">
+                        <span class="checkmark"></span>
+                        Dogs
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="animals" value="Neither">
+                        <span class="checkmark"></span>
+                        Neither
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <div class="quiz-slide">
+                    <p class="quiz-number">11 of 12</p>
+                    <h2>Could you live without internet or without air conditioning</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="live" value="Without internet">
+                        <span class="checkmark"></span>
+                        Without internet
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="live" value="Without air conditioning">
+                        <span class="checkmark"></span>
+                        Without air conditioning
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="live" value="I'd rather die">
+                        <span class="checkmark"></span>
+                        I'd rather die
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn" disabled>Next question</button>
+                    <button class="skip-btn">Skip</button>
+                    </div>
+                </div>
+
+                <div class="quiz-slide">
+                    <p class="quiz-number">12 of 12</p>
+                    <h2>Do you believe the world will be better in 10 years</h2>
+                    <div class="options-container">
+                    <label class="option">
+                        <input type="radio" name="future" value="Yes, I'm optimistic">
+                        <span class="checkmark"></span>
+                        Yes, I'm optimistic
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="future" value="No, everything is going to hell">
+                        <span class="checkmark"></span>
+                        No, everything is going to hell
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="future" value="I don't care">
+                        <span class="checkmark"></span>
+                        I don't care
+                    </label>
+                    </div>
+                    <div class="navigation">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn">Finish</button>
+                    </div>
+                </div>
+
+                <!-- Thank you slide -->
+                <div class="quiz-slide">
+                    <h2>Let`s celebrate!</h2>
+                    <p>Congratulations! You have successfully completed the test. We appreciate your participation and hope you found it informative!</p>
+                    <img src="./img/gift.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+</html>
