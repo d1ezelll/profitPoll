@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
   let currentSlide = 0;
   
-  // Показать первый слайд
+
   showSlide(currentSlide);
   
-  // Обработка выбора "Other"
+  
   if (otherOption) {
     otherOption.addEventListener('change', function() {
       specifyInput.style.display = this.checked ? 'block' : 'none';
@@ -22,22 +22,22 @@ document.addEventListener('DOMContentLoaded', function() {
     specifyInput.addEventListener('input', updateNextButton);
   }
   
-  // Обработка радио кнопок
+  
   radioInputs.forEach(input => {
     input.addEventListener('change', updateNextButton);
   });
   
-  // Кнопка "Next"
+  
   nextBtns.forEach(btn => {
     btn.addEventListener('click', goToNextSlide);
   });
   
-  // Кнопка "Previous"
+  
   prevBtns.forEach(btn => {
     btn.addEventListener('click', goToPrevSlide);
   });
   
-  // Кнопка "Skip"
+  
   skipBtns.forEach(btn => {
     btn.addEventListener('click', goToNextSlide);
   });
@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
     slides.forEach(slide => slide.classList.remove('active'));
     slides[n].classList.add('active');
     
-    // Обновить состояние кнопок
+    
     const prevBtn = slides[n].querySelector('.prev-btn');
     if (prevBtn) prevBtn.disabled = n === 0;
     
-    // Обновить nextBtn, если он есть на слайде
+    
     const nextBtn = slides[n].querySelector('.next-btn');
     if (nextBtn) nextBtn.disabled = !isAnswerSelected(n);
   }
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('active');
         headerMenu.classList.toggle('active');
         
-        // Блокировка скролла при открытом меню
+        
         if (headerMenu.classList.contains('active')) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Закрытие меню при клике на ссылку
+    
     const menuItems = document.querySelectorAll('.header-menu__item');
     menuItems.forEach(item => {
         item.addEventListener('click', function() {
